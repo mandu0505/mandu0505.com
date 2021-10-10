@@ -1,5 +1,4 @@
 # Mandu.com
-My Resume
 
 <!--
 Seperate profile : Myself
