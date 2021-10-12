@@ -1,15 +1,8 @@
 # Mandu.com
 
 <!--
-Seperate profile : Myself
-(Wants to know about ME more?)
-  -Profile  
-  -Interest
-  -MBTI
-  
-  :내가 코드를 좋아하고 즐기는 사람이다라는것이 드러나야함
-  
-  https://shift.moe/
-  https://www.youtube.com/watch?v=cpEeqACsF_Q&t=506s
-  -->
+현재 필요기능: 마우스 움직일때 M 반대로움직이는기능
+언어번역
+Read all눌렀을때 밑에 추가정보 뜨는거
+-->
 

@@ -62,13 +62,14 @@ header ul li a {
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     transition: 0.6s;
+    border-radius: 15px;
 }
 
 header ul li a.active,
 header ul li a:hover {
-    background: #205aff;
+    background: #5e78be;
 }
 
 .toggle {
@@ -80,12 +81,13 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 150px 100px 100px;
 }
 
 section img {
-    max-width: 300px;
+    position: relative;
+    max-width: 350px;
     margin-left: 30px;
 }
 
@@ -120,8 +122,10 @@ section h2 {
     bottom: 0px;
     right: 0px;
     left: 0px;
-    width: 590px;
     margin: 0 0 32px 0;
+    width: 450px;
+    position:relative;
+    display: block;
 } 
 
 section p {
@@ -139,11 +143,6 @@ section a {
     border-radius: 6px;
 }
 
-section a.active,
-section a:hover {
-    background: #205aff;
-}
-
  /* section:nth-child(odd) {
     position: relative;
     justify-content: relative;
@@ -153,128 +152,22 @@ section a:hover {
 }   */
 
 
-/* Read All Box */
 
-.login-box form a {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #03e9f4;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 40px;
-    letter-spacing: 4px
-}
-
-.login-box a:hover {
-    background: #03e9f4;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
-}
-
-.login-box a span {
-    position: absolute;
-    display: block;
-}
-
-.login-box a span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #03e9f4);
-    animation: btn-anim1 1s linear infinite;
-}
-
-@keyframes btn-anim1 {
-0% {
-    left: -100%;
-}
-50%,100% {
-    left: 100%;
-}
-}
-
-.login-box a span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #03e9f4);
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: .25s
-}
-
-@keyframes btn-anim2 {
-0% {
-    top: -100%;
-}
-50%,100% {
-    top: 100%;
-}
-}
-
-.login-box a span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #03e9f4);
-    animation: btn-anim3 1s linear infinite;
-    animation-delay: .5s
-}
-
-@keyframes btn-anim3 {
-0% {
-    right: -100%;
-}
-50%,100% {
-    right: 100%;
-}
-}
-
-.login-box a span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #03e9f4);
-    animation: btn-anim4 1s linear infinite;
-    animation-delay: .75s
-}
-
-@keyframes btn-anim4 {
-0% {
-    bottom: -100%;
-}
-50%,100% {
-    bottom: 100%;
-}
-}
-
-/* tab media responsive */
+/* tab-header media responsive */
 
 @media (max-width: 992px) {
     section {
+        height: auto !important;
+        display: initial;
+        box-sizing: border-box;
         padding: 100px 50px 50px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         display: flex;
     }
-    section img {
-        margin: 50px 0 0;
-        max-width: 100%;
-    }
     header ul {
-        position: absolute;
+        position: fixed;
         top: -100%;
         left: 0;
         width: 100%;
@@ -283,7 +176,7 @@ section a:hover {
         text-align: center;
         overflow: auto;
         transition: 0.6s;
-        background: #111;
+        background: #000;
         flex-direction: column;
         opacity: 0;
         transform: translateY(-100%);
@@ -296,6 +189,7 @@ section a:hover {
     header ul li a {
         margin: 5px 0;
         font-size: 24px;
+        color: #fff;
     }
     .toggle {
         display: block;
@@ -333,5 +227,28 @@ section a:hover {
     header.active .toggle:after {
         top: 14px;
         transform: rotate(-45deg);
+    }
+    section #home{
+        height: auto !important;
+        display: initial;
+        padding: 100px;
+        box-sizing: border-box;
+    }
+    .bannerText {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateY(0);
+        max-width: 700px;
+        margin-top: 100px;
+        z-index: 1001;
+    }
+    #mandu
+    {
+        margin: 50px 0 0;
+        position: absolute;
+        right: 5%;
+        margin-top: 200px;
+        z-index: 100;
     }
 }
