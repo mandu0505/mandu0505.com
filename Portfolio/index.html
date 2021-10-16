@@ -5,20 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>gosmain / Youngmin Ko</title>
         <link href = "style.css" type = "text/css" rel = "stylesheet">
-        <link rel="shortcut icon" type="image/x-icon" href = "pic.ico">
+        <link rel = "shortcut icon" type="image/x-icon" href = "pic.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        </head>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
     <body>
         <header id = "header">
             <a href = "#" class = "logo">M</a>
             <ul>
                 <li><a href = "#home" class = "active" onclick = "toggle()">Home</a></li>
-                <li><a href = "#about" onclick = "toggle()">About</a></li>
-                <li><a href = "#services" onclick = "toggle()">Servics</a></li>
                 <li><a href = "#portfolio" onclick = "toggle()">Portfolio</a></li>
-                <li><a href = "#team" onclick = "toggle()">Team</a></li>
                 <li><a href = "#contact" onclick = "toggle()">Contact</a></li>
-                <span><a href = "https://github.com/gosmain"><i class="fa fa-github" style="font-size:36px"></i></a></span>
+                <a href = "https://github.com/gosmain"><i class="fa fa-github" style="font-size:36px"></i></a>
             </ul>
             <div class = "toggle" onclick = "toggle()"></div>
         </header>
@@ -26,51 +24,42 @@
             <div class = "bannerText">
                 <h1>Youngmin Ko</h1>
                 <h3>지금까지 연 중괄호 수는 기억 못 하고 있습니다</h3>
-                <p>프로그래머입니다<br>프로그래머입니프로그래머입니프로그래머입니 여기저기서 돌아가는 프로그램을 만듭니다. ~~~</p>
-                <div class="read-box">
-                    <form>
-                        <a href="#">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            전체 이력 보기
-                        </a>
-                    </form>
-                </div> 
+                <p>프로그래머입니다.<br>
+                    여기저기서 돌아가는 프로그램을 만듭니다.<br>
+                    검은 화면에 흰색 글씨만 나오는 심심해 보이는 프로그램부터 스마트폰에서 돌아가는 앱과 게임, 브라우저에서 돌아가는 홈페이지나 웹 앱, 지구 어딘가에서 열심히 돌아가는 서버도 만듭니다.</p>
+                <a href = #portfolio><input type = "button" value = "전체 이력 보기" onclick = "showBtn(this);"></a>
             </div>
-            <img src = "pic.png" id = "mandu">
-        </section>
-        <section id = "about">
-            <div>
-                <h2>About us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-        </section>
-        <section id = "services">
-            <div>
-                <h2>Our Services</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
+            <img src = "pic.png" id = "mandu" data-speed = "1" class = "layer">
         </section>
         <section id = "portfolio">
-            <div>
-                <h2>Our Recent Work</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <div class = "contentText">
+                <h2>WORK EXPERIENCES</h2>
+                <p><i class="fal fa-chevron-double-right"></i> None</p>
+                <h5 id = "showBx">NGINE STUDIOS / NEXON COMPANY 소프트웨어 엔지니어, 2020.   6 –
+                    넥슨컴퍼니 산하 엔진스튜디오에서 산업기능요원으로 일하고 있습니다. </h5>
+                <h5 id = "showBx2">NGINE STUDIOS / NEXON COMPANY 소프트웨어 엔지니어, 2020. 6 –
+                    넥슨컴퍼니 산하 엔진스튜디오에서 산업기능요원으로 일하고 있습니다. </h5>
+                <h2>EDUCATION</h2>
+                <p><i class="fal fa-chevron-double-right"></i> Xi'an Jiaotong-Liverpool University (XJTLU) 학부 20학번, 2020.09 - (휴학)</p>
+                <h2>ACHIEVEMENTS</h2>
+                <p><i class="fal fa-chevron-double-right"></i> None</p>
+                <h2>PROJECTS</h2>
+                <p><i class="fal fa-chevron-double-right"></i> xxx.com 트위터 한정 조회수 기반 나열 플랫폼, 2021.09 -<br>- 개인 프로젝트 / 개발 및 디자인</p>
+                <h5 id = "showBx3">기존에 사용하던 트위터의 컨텐츠 나열 시스템이 불편해 새로 제작했습니다. <br> -->userName에 자신의 트위터 아이디를 입력하여 조회수 순서대로 컨텐츠를 조회할 수 있습니다.</h5>
+                <h2>EXTRACURRICULAR ACTIVITIES</h2>
+                <p><i class="fal fa-chevron-double-right"></i> None</p>
+                <h2>OTHER EXPERIENCES</h2>
+                <p><i class="fal fa-chevron-double-right"></i> None</p>
             </div>
         </section>
-        <section id = "team">
-            <div>
-                <h2>Our Expert</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-        </section>
-        <section id = "contact">
+        <section id = "contact" class = "contentText">
             <div>
                 <h2>Contact Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p>None</p>
             </div>
         </section>
         <script src = "js.js"></script>
     </body>
 </html>
+
+
