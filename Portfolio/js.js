@@ -17,7 +17,7 @@ let image = document.getElementById("mandu");
 window.addEventListener("scroll", function() {
     let value = window.scrollY;
 
-    image.style.top = value * 1 + "px";
+    image.style.top = value * 0.9 + "px";
 })
 
 // image shake
