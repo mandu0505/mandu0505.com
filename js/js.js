@@ -35,14 +35,18 @@ function parallax(e) {
 
 // show & hide btn
 function input_show() {
-    document.getElementById("showBx").style.display = "block";
-    document.getElementById("showBx2").style.display = "block";
-    document.getElementById("showBx3").style.display = "block";
+    let showBx = document.getElementsByClassName("showBx");
+    for(let i = 0; i < showBx.length; i++){
+        let showBtn = showBx.item(i);
+        showBtn.style.display = "block";
+    }
 }
 function input_hide() {
-    document.getElementById("showBx").style.display = "none";
-    document.getElementById("showBx2").style.display = "none";
-    document.getElementById("showBx3").style.display = "none";
+    let hideBx = document.getElementsByClassName("showBx");
+    for(let i = 0; i < hideBx.length; i++){
+        let hideBtn = hideBx.item(i);
+        hideBtn.style.display = "none";
+    }
 }
 
 function showBtn(self){              
