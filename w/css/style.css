@@ -26,7 +26,6 @@ header {
     padding: 30px 100px;
     z-index: 100000;
 }
-
 header.sticky {
     padding: 16px 100px;
     background: blanchedalmond;
@@ -185,6 +184,17 @@ section input {
     padding: 100px 100px 50px;
 }
 
+#contact {
+    padding: 100px 100px 50px;
+}
+#contact div span i:hover {
+    opacity: 0.8;
+}
+.icons {
+    float: left;
+    margin-right: 50px;
+}
+
 footer div p {
     font-size: 10px;
     font-weight: 700;
@@ -223,7 +233,7 @@ footer div {
         text-align: center;
         overflow: auto;
         transition: 0.5s;
-        background: #000;
+        background: rgb(244, 223, 223);
         flex-direction: column;
         opacity: 0;
         transform: translateY(-100%);
