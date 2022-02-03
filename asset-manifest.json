@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mandu0505.com/static/css/main.efc04315.css",
-    "main.js": "/mandu0505.com/static/js/main.39d049d6.js",
+    "main.js": "/mandu0505.com/static/js/main.00c8a3e1.js",
     "static/media/favicon.png": "/mandu0505.com/static/media/favicon.d03f70865185a3162b85.png",
     "static/media/mandu0505.svg": "/mandu0505.com/static/media/mandu0505.52695cd706cb049418355cbf36107c14.svg",
     "index.html": "/mandu0505.com/index.html",
     "main.efc04315.css.map": "/mandu0505.com/static/css/main.efc04315.css.map",
-    "main.39d049d6.js.map": "/mandu0505.com/static/js/main.39d049d6.js.map"
+    "main.00c8a3e1.js.map": "/mandu0505.com/static/js/main.00c8a3e1.js.map"
   },
   "entrypoints": [
     "static/css/main.efc04315.css",
-    "static/js/main.39d049d6.js"
+    "static/js/main.00c8a3e1.js"
   ]
 }
