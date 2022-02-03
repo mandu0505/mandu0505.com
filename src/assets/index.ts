@@ -1,0 +1,1 @@
+export { ReactComponent as Mandu0505 } from "./mandu0505.svg";
