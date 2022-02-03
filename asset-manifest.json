@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/mandu0505.com/static/css/main.efc04315.css",
+    "main.js": "/mandu0505.com/static/js/main.68112388.js",
+    "index.html": "/mandu0505.com/index.html",
+    "static/media/mandu0505.svg": "/mandu0505.com/static/media/mandu0505.52695cd706cb049418355cbf36107c14.svg",
+    "main.efc04315.css.map": "/mandu0505.com/static/css/main.efc04315.css.map",
+    "main.68112388.js.map": "/mandu0505.com/static/js/main.68112388.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efc04315.css",
+    "static/js/main.68112388.js"
+  ]
+}
