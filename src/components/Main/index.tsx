@@ -103,7 +103,11 @@ const Wrapper = styled(Container)`
 const links = [
   { id: "github", link: "https://github.com/mandu0505" },
   {
-    id: "resume",
+    id: "resume(en)",
+    link: "https://mandu0505.notion.site/Youngmin-mandu0505-2753797a76154a47bacd179d0564fbb8",
+  },
+  {
+    id: "resume(ko)",
     link: "https://mandu0505.notion.site/mandu0505-21db250e06b741c5b084d5f13fe49fa8",
   },
   {

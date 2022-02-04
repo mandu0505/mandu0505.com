@@ -82,15 +82,15 @@ const records = [
       {
         id: "1",
         title: "Javascript",
-        info: `Understood ES6+ syntax and typescript.
-        Always interested in the latest related technologies, and constantly studying to write and test efficient and clean codes.
-        Familiar with media services in the web environment and can actively utilize API data and do DOM manipulation`,
+        info: `Familiar with ES6+ syntax and typescript. 
+        Constantly studying to write and test efficient and clean codes. 
+        Understood the concept of Routing, Single Page Application, DOM manipulation and can actively utilize API materials.`,
         date: "",
       },
       {
         id: "2",
         title: "React",
-        info: `Can code the desired functionality to meet the given requirements. 
+        info: `Able to develop the desired functionality to meet the given requirements. 
         Have a deep understanding of the functional components and hooks that React team suggests for. 
         State management libraries such as Recoil can be actively utilized and used for purposes.`,
         date: "",

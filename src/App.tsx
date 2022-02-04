@@ -4,8 +4,10 @@ import Main from "./components/Main";
 import Project from "./components/Project";
 import Record from "./components/Record";
 import Slider from "./components/Slider";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { lightTheme, darkTheme, flexCenter } from "./styles/theme";
 import styled, { ThemeProvider } from "styled-components";
+import favicon from "./image/favicon.png";
 
 const AppContainer = styled.div`
   color: ${({ theme }) => theme.color.white};
@@ -49,6 +51,30 @@ function App() {
       <ThemeToggle onClick={handleTheme} isDark={theme === "dark"}>
         {theme === "dark" ? "LIGHT MODE" : "DARK MODE"}
       </ThemeToggle>
+      <HelmetProvider>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <meta property="og:title" content="Mandu0505 | Youngmin" />
+          <meta property="og:image" content="/og-main.png" />
+          <meta
+            property="og:description"
+            content="Front-end Developer Youngmin's Protfolio Website"
+          />
+          <meta name="description" content="Mandu0505 | Youngmin" />
+          <meta
+            name="keywords"
+            content="프로그래머, 개발자, 프론트엔드, mandu0505, Youngmin, 고영민"
+          />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="theme-color" content="#000000" />
+          <meta
+            name="description"
+            content="Website made by mandu0505 (Youngmin)"
+          />
+          <title>Mandu0505 | Youngmin</title>
+          <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
+        </Helmet>
+      </HelmetProvider>
       <AppContainer>
         <div className="App">
           {slider ? (
