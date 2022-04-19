@@ -10,6 +10,7 @@ const Wrapper = styled(Container)`
     margin-top: 18rem;
     .box {
       margin-top: 5rem;
+      margin-right: 140px;
       .title {
         ${flexCenter};
         justify-content: space-between;
@@ -40,12 +41,12 @@ const Wrapper = styled(Container)`
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-left: 50px;
+      margin-left: 100px;
     }
     &:nth-child(3) {
       display: flex;
       flex-direction: column;
-      align-items: end;
+      align-items: flex-end;
     }
   }
 `;
@@ -54,6 +55,7 @@ const Title = styled.div<{ title: string }>`
   font-weight: bold;
   font-size: 6.4rem;
   line-height: 7.8rem;
+  width: 0px;
   color: transparent;
   -webkit-text-stroke: 0.1rem ${({ theme }) => theme.color.white};
   position: relative;
@@ -133,7 +135,8 @@ const records = [
     ],
   },
   {
-    id: `Activities`,
+    id: `Extracurricular 
+    activities`,
     contents: [
       {
         id: "1",
